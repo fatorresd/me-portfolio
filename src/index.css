@@ -1,0 +1,40 @@
+@import "tailwindcss";
+/* @custom-variant dark (&:where(.dark, .dark *)); */
+
+@import "slick-carousel/slick/slick.css"; 
+@import "slick-carousel/slick/slick-theme.css";
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient 10s ease infinite;
+  }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dark {
+  background-color: #1a202c;
+  color: #ffffff;
+}
+
+.dark .bg-white {
+  background-color: #2d3748;
+}
+
+.dark .text-gray-800 {
+  color: #ffffff;
+}
